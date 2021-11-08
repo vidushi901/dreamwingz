@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dreamwingz</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/contact_org.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="img/favicon.png" type="image" sizes="16x16">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div><a href="/"><img src="img/logo.png" alt="" class="logo"></a></div>
+        <ul class="links">
+          <li>
+            <a href="#" class="desktop-link">Solutions</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Solutions</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li><a href="#">Drop Menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Our Methods</a></li>
+          <li>
+            <a href="#" class="desktop-link">Services</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <!-- <li>
+                            <a href="#" class="desktop-link">More Items</a>
+                            <input type="checkbox" id="show-items">
+                            <label for="show-items">More Items</label>
+                            <ul>
+                                <li><a href="#">Sub Menu 1</a></li>
+                                <li><a href="#">Sub Menu 2</a></li>
+                                <li><a href="#">Sub Menu 3</a></li>
+                            </ul>
+                        </li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">About Us</a>
+            <label for="show-about">About Us</label>
+          </li>
+          <li><a href="" class="desktop-link">Talk to Us!</a>
+            <input type="checkbox" id="show-contact">
+            <label for="show-contact">Talk to Us!</label>
+            <ul>
+              <li><a href="/contact-student">Student</a></li>
+              <li><a href="/contactorg">Organization</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+  <div style="display: flex; align-items: center;
+  justify-content: center;">
+    <div class="container">
+      <form id="contact" action="" method="post">
+        <h3>Contact Us</h3>
+        <h4>Send us a message, and we'll reach out!</h4>
+        <% if(msg!='' ){%>
+          <h4 style="color:#068f06">Message sent successfully</h4>
+          <%} %>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required name="name">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required name="email">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number" type="tel" tabindex="3" required name="number">
+            </fieldset>
+            <datalist id="mylist1">
+              <option value="Corporate">
+              <option value="Educational Institute">
+              <option value="NGO">
+            </datalist>
+            <fieldset>
+              <input type="search" list="mylist1" tabindex="4" placeholder="What is your organization about?" required
+                name="organization">
+            </fieldset>
+            <fieldset>
+              <input placeholder="What would you like to know about" type="text" tabindex="5" required name="info">
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your Message Here...." tabindex="6" name="message"></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+      </form>
+
+
+    </div>
+  </div>
+</body>
+
+
+</html>
